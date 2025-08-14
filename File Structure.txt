@@ -4,7 +4,8 @@ multiplayer-tag/
 └── assets/
     ├── player.png
     ├── tagger.png
-    ├── powerup.png (speed)
+    ├── powerup.png
     ├── freeze.png
     ├── invisible.png
-    └── teleport.png
+    ├── teleport.png
+    └── wall.png
