@@ -1,0 +1,10 @@
+multiplayer-tag/
+├── index.html
+├── game.js
+└── assets/
+    ├── player.png
+    ├── tagger.png
+    ├── powerup.png (speed)
+    ├── freeze.png
+    ├── invisible.png
+    └── teleport.png
