@@ -150,5 +150,12 @@ function activatePowerUp(player, powerUp) {
     powerUp.destroy();
 }
 
+const config = {
+    // ... existing config ...
+    canvas: { 
+        willReadFrequently: true,
+        contextAttributes: { willReadFrequently: true }  // Add this
+    }
+};
 // --- Rest of the code (networking, AI, etc.) ---
 // [Include all other necessary functions from previous examples]
