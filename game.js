@@ -157,5 +157,23 @@ const config = {
         contextAttributes: { willReadFrequently: true }  // Add this
     }
 };
+
+const config = {
+    // ... existing config ...
+    render: {
+        pixelArt: false,
+        antialias: true,
+        roundPixels: false,
+        transparent: false,
+        clearBeforeRender: true,
+        premultipliedAlpha: true,
+        failIfMajorPerformanceCaveat: false,
+        powerPreference: "default",
+        batchSize: 2000,
+        maxTextures: 32,
+        mipmapFilter: "LINEAR_MIPMAP_LINEAR",
+        renderType: Phaser.AUTO  // <-- Add this line
+    }
+};
 // --- Rest of the code (networking, AI, etc.) ---
 // [Include all other necessary functions from previous examples]
