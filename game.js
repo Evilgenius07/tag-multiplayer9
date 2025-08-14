@@ -175,5 +175,33 @@ const config = {
         renderType: Phaser.AUTO  // <-- Add this line
     }
 };
+
+const config = {
+    type: Phaser.AUTO,
+    width: 800,
+    height: 600,
+    parent: 'game-container',
+    physics: { 
+        default: 'arcade',
+        arcade: { 
+            debug: false,
+            gravity: { y: 0 }
+        }
+    },
+    render: {
+        pixelArt: false,
+        antialias: true,
+        renderType: Phaser.WEBGL,  // Explicitly set render type
+        powerPreference: "high-performance"
+    },
+    canvas: { 
+        willReadFrequently: true  // For the Canvas2D optimization
+    },
+    scene: { preload, create, update }
+};
+
+// Add this right after creating your game instance
+const game = new Phaser.Game(config);
+game.renderer.pipelines.clear();  // Prevents redundant warnings
 // --- Rest of the code (networking, AI, etc.) ---
 // [Include all other necessary functions from previous examples]
